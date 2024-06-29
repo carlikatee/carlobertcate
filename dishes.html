@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website Design</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header section starts -->
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>resto</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a class="active"  href="dishes.html">menu</a>
+        <a href="about.html">about</a>
+        <a href="menu.html">dishes</a>
+        <a href="review.html">review</a>
+        <a href="order.html">order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+</header>
+<!-- header section ends -->
+
+<!-- dishes section starts -->
+<section class="dishes" id="dishes">
+
+    <h3 class="sub-heading"> our menu </h3>
+    <h1 class="heading"> today's speciality  </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="dishes1.png" alt="Resto burger">
+            <h3>Resto burger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 150.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="Resto burger" data-price="150.00" data-img="dishes1.png">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="dishes2.png" alt="Roast Chicken">
+            <h3>Roast Chicken</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 699.00</span>
+            <a href="#" class="btn add-to-cart" data-id="2" data-name="Roast Chicken" data-price="699.00" data-img="dishes2.png">add to cart</a>
+        </div>
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="dishes3.png" alt="tasty food">
+            <h3>Resto Nuggets</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 349.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="dishes4.png" alt="tasty food">
+            <h3>Resto Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 700.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="image2.jpg" alt="tasty food">
+            <h3>Soy Garlic chicken</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 250.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+        
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="dishes6.png" alt="tasty food">
+            <h3>Resto Cake</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 120.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu1.webp" alt="tasty food">
+            <h3>tonkatsu</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 199.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu2.jpg" alt="tasty food">
+            <h3>Pizza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 650.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu3.jfif" alt="tasty food">
+            <h3>strawberry shake</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 110.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu4.jfif" alt="tasty food">
+            <h3>carbonara</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 120.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu5.jpg" alt="tasty food">
+            <h3>bulalo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 850.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu6.jpg" alt="tasty food">
+            <h3>karekare</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 650.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu7.jpg" alt="tasty food">
+            <h3>steak</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 450.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu8.webp" alt="tasty food">
+            <h3>resto chicken</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 220.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+        <div class="box">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-eye"></a>
+            <img src="menu9.jfif" alt="tasty food">
+            <h3>baked sushi</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span>₱ 200.00</span>
+            <a href="#" class="btn add-to-cart" data-id="1" data-name="tasty food" data-price="15.99">add to cart</a>
+        </div>
+
+
+        
+        </div>   
+        
+            </div>   
+        
+        </section>
+        
+        <!-- dishes section ends -->
+        
+        <!--footer section stars-->
+        
+        <section class="footer">
+        
+            <div class="box-container">
+                
+                <div class="box">
+                    <h3>Locations</h3>
+                    <a href="#">SM Tanza, Cavite</a>
+                    <a href="#">SM Mall of Asia Arena</a>
+                    <a href="#">Ayala Malls Manilla Bay</a>
+                    <a href="#">Evia Lifestyle Center</a>
+                    <a href="#">Robinson Place General, Trias</a>
+                </div>
+        
+        
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <a href="tel:+046-423-1243">+046-423-1243</a>
+                    <a href="tel:+63971-856-318">+63 971-856-318</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.tiktok.com/">Tiktok</a>
+                </div>
+        
+            </div>
+        
+            <div class="credit"> 
+                Copyright &copy; 2024 by <span>carlobert blanco cate</span>
+            </div>
+        
+</section>
+
+<!--footer section ends-->
+
+<script>
+// pinagsama ko kasi mas madali at organized
+document.addEventListener('DOMContentLoaded', () => {
+    const cartButtons = document.querySelectorAll('.add-to-cart');
+
+    cartButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            const src = button.getAttribute('data-img')
+            const id = button.getAttribute('data-id');
+            const name = button.getAttribute('data-name');
+            const price = button.getAttribute('data-price');
+            const item = { id, name, price };
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(item);
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${name} added to cart!`);
+        });
+    });
+});
+</script>
+
+</body>
+</html>

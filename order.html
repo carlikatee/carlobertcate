@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website Design</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header section starts -->
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>resto</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="dishes.html">menu</a>
+        <a href="about.html">about</a>
+        <a href="menu.html">dishes</a>
+        <a href="review.html">review</a>
+        <a class="active"  href="order.html">order</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+</header>
+<!-- header section ends -->
+<!--order section starts-->
+
+<section class="order" id="order">
+    <h3 class="sub-heading">Order Now</h3>
+    <h1 class="heading">Free and Fast</h1>
+
+    <form id="orderForm">
+        <div class="inputBox">
+            <div class="input">
+                <span>Your Name</span>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input">
+                <span>Your Number</span>
+                <input type="number" name="number" placeholder="Enter your number" required>
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>Your Order</span>
+                <input type="text" name="order" placeholder="Enter food name" required>
+            </div>
+            <div class="input">
+                <span>Additional Food</span>
+                <input type="text" name="additional" placeholder="Extra with food">
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>How Much</span>
+                <input type="number" name="quantity" placeholder="How many orders" required>
+            </div>
+            <div class="input">
+                <span>Date and Time</span>
+                <input type="datetime-local" name="datetime" required>
+            </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="input">
+                <span>Your Address</span>
+                <textarea name="address" cols="30" rows="10" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="input">
+                <span>Your Message</span>
+                <textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            </div>
+        </div>
+
+        <input type="submit" value="Order Now" class="btn">
+    </form>
+
+</section>
+
+<!--order section ends-->
+<!--footer section starts-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">SM Tanza, Cavite</a>
+            <a href="#">SM Mall of Asia Arena</a>
+            <a href="#">Ayala Malls Manilla Bay</a>
+            <a href="#">Evia Lifestyle Center</a>
+            <a href="#">Robinson Place General, Trias</a>
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="tel:+046-423-1243">+046-423-1243</a>
+            <a href="tel:+63971-856-318">+63 971-856-318</a>
+        </div>
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.tiktok.com/">Tiktok</a>
+        </div>
+    </div>
+
+    <div class="credit"> 
+        Copyright &copy; 2024 by <span>carlobert blanco cate</span>
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+    document.getElementById('orderForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Get form data
+        const formData = new FormData(this);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // Process form data (e.g., send to server)
+        console.log(data);
+
+        // Show confirmation message or handle form submission
+        alert('Order placed successfully!');
+    });
+</script>
+</body>
+</html>
+
